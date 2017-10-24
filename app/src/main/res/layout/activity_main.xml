@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unica.firstfinals.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:paddingTop="75dp"
+        android:paddingLeft="60dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:paddingTop="75dp"
+        android:hint="Enter Username"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:paddingTop="120dp"
+        android:paddingLeft="60dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:paddingTop="120dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"/>
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Info"
+        android:textColor="#ffff"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="70dp"
+        android:onClick="saveInfo"
+        />
+    <Button
+        android:id="@+id/btn_Display"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Display Info"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="displayInfo"/>
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="280dp"
+        android:paddingLeft="100dp"
+        />
+</RelativeLayout>
